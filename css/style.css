@@ -243,17 +243,16 @@ opacity: .4;
     display: flex;justify-content: space-between;
 }
 .team-head {
-    margin-bottom: 10px;
+    margin-top:  2rem; ;
     text-align: center;
 }
 .team-head h2{
+    margin-top: 75px;
     font-size: 34px;
-    font-weight: bold;
     color: rgb(0, 0, 49);    
 }
 .team-head p{
     font-size: 20px;
-    font-weight: bold;
     color: rgb(0, 0, 49);    
 }
 .team-box {
@@ -301,10 +300,81 @@ opacity: .4;
     padding: 0 7px 7px 0;
     border-radius: 50%;
     margin: 0 5px;
+    height: fit-content;
 }
 .team-card .icn2{
     display: inline-block;
     background-color: blue;
     padding: 0 7px 7px 0;
     border-radius: 50%;
+}
+.reviews-bg{
+    background-color: #6b728013;
+    padding: 10px;
+}
+.reviews-section {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-btn {
+    background: #fff;
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 5;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.nav-btn:hover {
+    background: #ececec;
+}
+
+.reviews-slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    width: calc((100% - 60px) / 5); /* 4 per row */
+    min-width: 250px;
+    border: rgba(0,0,0,0.1) solid 1px;
+    border-radius: 15px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+}
+
+.stars i {
+    font-size: 18px;
+}
+
+.users {
+    display: flex;
+    margin-top: 15px;
+}
+
+.user-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    align-items: end;
+}
+.usersname {
+    margin-left: 10px;
 }
