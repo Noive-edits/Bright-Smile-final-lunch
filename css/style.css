@@ -1,0 +1,310 @@
+*{padding: 0;margin: 0;box-sizing: border-box;
+}
+
+.contact{
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+    height: 50px;
+    background-color: rgb(48, 48, 248);
+    
+}
+svg{
+    
+    fill: white;
+    height: 20px;
+    color: white;
+
+}
+.time-work,.email,.phone-num{
+    display: flex;
+    justify-content: center;gap: 5px;
+    position: relative;
+    left: 40px;
+}
+.care{
+    display: flex;
+    margin-left: 650px;
+    gap: 10px;
+    align-items: center;}
+
+
+.logo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.logo-icon {
+    background: #3048f8;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooth {
+    height: 35px;
+    width: 35px;
+}
+.appointment h6{
+    color: #3b82f6;
+    text-align: center;
+}
+.logo-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+.logo-name h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #222;
+    font-weight: 600;
+}
+
+.logo-name p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    display: flex;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+select{
+    border: none;
+    position: relative;
+}
+.appointment{
+    position: relative;left: 750px;display: flex;gap: 10px;align-items: center;
+}
+.heading h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0.1em;
+}
+
+.heading h1 span {
+    color: #3048f8;
+}
+
+.heading p {
+    font-size: 1.2em;
+    color: #555555;
+    margin-top: -0.5em;
+}
+
+.header-btn1 {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #3048f8;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.header-btn1:hover {
+    background-color: #7033ff;
+    color: white;
+    border-color: #7033ff;
+}
+
+.header-btn2 {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 1em;
+    color: #7033ff;
+    background-color: transparent;
+    border: 2px solid #7033ff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.header-btn2:hover {
+    background-color: #3048f8;
+    color: #ffffff;
+    border-color:#3048f8 ;
+}
+.head-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px ;
+}
+
+.prop{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    text-align: center;
+}
+
+.prop span{
+    font-size: 1.9em;
+    color: #7033ff;
+}
+.img1{
+  width: 1000px;   
+  height: 600px; 
+  object-fit: cover; /* makes sure it fills the rectangle without distortion */
+  border: solid transparent;
+  border-radius: 20px;
+}
+.section-2{
+    margin-top: 3rem;
+}
+.background-clip{
+position: absolute;
+right: 0;
+bottom: 0;
+z-index: -1;
+opacity: .4;
+}
+        body {
+            background-color: #fff;
+        }
+
+        .services-section {
+            padding: 4rem 1rem;
+        }
+
+        .service-card {
+            border: 1px solid #eef0f6;
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: 0 6px 18px rgba(31, 41, 55, 0.03);
+        }
+
+        .icon-circle {
+            width: 55px;
+            height: 55px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        .icon-circle i {
+            font-size: 1.15rem;
+        }
+
+        .service-title {
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+
+        .learn-more {
+            font-size: 0.85rem;
+            color: #3b82f6;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .section-sub {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+.services-section{
+    margin-top: 100px;
+}
+
+.container-bg{
+    background-color: #6b728013;
+    padding: 100px;
+}
+.icon-maker{
+    display: flex;align-items: center;gap: 15px;margin-top: 25px;
+}
+.container-bg{
+    display: flex;justify-content: space-between;
+}
+.team-head {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.team-head h2{
+    font-size: 34px;
+    font-weight: bold;
+    color: rgb(0, 0, 49);    
+}
+.team-head p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 49);    
+}
+.team-box {
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.team-card {
+    width: 400px;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    margin: 15px;
+    text-align: center;
+    font-family: 'Arial, sans-serif';
+    padding: 20px;
+}
+.team-card img{
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+}
+.team-card h3{
+    color: rgb(0, 0, 49); 
+    margin-bottom: 10px;
+}
+.team-card span{
+    color: blue;
+}
+.team-card p{
+    margin: 0;
+    font-size: 13px;
+}
+.team-card i{
+    color: rgb(255, 255, 255); 
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+}
+.team-card .icn1{
+    display: inline-block;
+    background-color: blue;
+    padding: 0 7px 7px 0;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.team-card .icn2{
+    display: inline-block;
+    background-color: blue;
+    padding: 0 7px 7px 0;
+    border-radius: 50%;
+}
