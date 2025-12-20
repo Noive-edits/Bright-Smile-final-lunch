@@ -7,8 +7,12 @@
         <link rel="stylesheet" href="">
          <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
     
 </head>
 <body>
@@ -51,6 +55,7 @@
 
         <nav>
             <ul>
+                
                 <li><a href="#">Home</a></li>
                 <select class="service">
                     <option value="">Services</option>
@@ -101,7 +106,7 @@
     <video autoplay muted loop plays-inline class="background-clip">
         <source src="Imgs/Dental clinic  Commercial video - Avinov Films (1080p, h264).mp4" type="video/mp4">
     </video>
-
+<div data-aos="fade-up">
   <section class="services-section">
         <div class="container">
             <div class="row justify-content-center mb-5">
@@ -111,7 +116,8 @@
                     to keep your smile healthy and beautiful</p>
                  </div>
             </div>
-
+</div>
+<div data-aos="fade-up">
             <div class="row g-4 services-grid">
                 <!-- Card 1 -->
                 <div class="col-12 col-md-6 col-lg-4">
@@ -224,6 +230,7 @@
             </div>
         </div>
     </section>
+    </div>
 
    <section class="container-bg">
     <div class="container">
@@ -268,7 +275,7 @@ possible treatment.</p>
                </video>
         </div>       
    </section>
-
+<div data-aos="fade-up">
     <section class="container " id="team" >
         <div class="team-head">
             <h2>Meet Our Expert Team</h2>
@@ -294,10 +301,12 @@ possible treatment.</p>
                 <div class="icn1"><i class="fa-brands fa-linkedin"></i></div><div class="icn2"><i class="fa-brands fa-square-twitter"></i></div> 
             </div>
         </div>
+        
     </section>
+    </div>
     <div class="reviews-bg">
     <div class="container">
-    <h4 style="margin: 100px; font-size: 34px;" class="text-center">Our patentnt Reveiws</h4>
+    <h4 style="margin-bottom:100px ; font-size: 34px;" class="text-center">Our patentnt Reveiws</h4>
     </div>
   <div class="reviews-section">
     
@@ -492,6 +501,244 @@ possible treatment.</p>
 
 </div>
 </div>
+ <style>
+        body {
+            background: #fff;
+        }
+
+        .appointment-box {
+            background: #f9fafb;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        .icon-circle {
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e0e7ff;
+            color: #3b50ff;
+            font-size: 18px;
+        }
+
+        .info-item {
+            margin-bottom: 1.3rem;
+        }
+
+        .info-item h6 {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .info-item p {
+            margin: 0;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            border: 0;
+            padding: 0.75rem;
+            font-weight: 600;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5 align-items-start">
+
+                <!-- Left Info -->
+                <div class="col-lg-5">
+                    <h2 class="fw-bold mb-3">Schedule Your Appointment</h2>
+                    <p class="text-muted mb-4">Ready to take the next step towards a healthier smile? Contact us today
+                        to schedule your consultation.</p>
+
+                    <div class="info-item d-flex align-items-start gap-3">
+                        <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h6>Phone</h6>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item d-flex align-items-start gap-3">
+                        <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h6>Email</h6>
+                            <p>info@dentalcare.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item d-flex align-items-start gap-3">
+                        <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h6>Address</h6>
+                            <p>123 Dental Street, Health City, HC 12345</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item d-flex align-items-start gap-3">
+                        <div class="icon-circle"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h6>Hours</h6>
+                            <p>Mon-Fri: 8AM-6PM, Sat: 9AM-3PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form -->
+                <div class="col-lg-7">
+                    <div class="appointment-box">
+                        <form id="form">
+                            <h3 class="alert alert-danger text-center" style="display: none;"  id="h3"></h3>
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+                                    <label class="form-label">First Name</label>
+                                    <input id="name" type="text" class="form-control" >
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Last Name</label>
+                                    <input id="name2" type="text" class="form-control" >
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">Email</label>
+                                    <input id="emailadress" type="text" class="form-control" >
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">Phone</label>
+                                    <input id="phone" type="text" class="form-control" >
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">Preferred Date</label>
+                                    <input id="date" type="datetime-local" class="form-control" >
+                                </div>
+                                
+
+                                <div class="col-12">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" rows="5"></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100">Book Appointment</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<section style="padding: 100px;margin-top: 100px; background-color: #6b728013" class="appointments">
+    <div class="text-capitalize text-center"> <h2>Your Appointments</h2> </div>
+    
+<section class="mt-5 container">
+  <div>
+    <table id="table" class="table table-striped table-primary">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Floating Button -->
+<button id="chatToggle" class="chat-toggle">
+    <i class="fa-solid fa-comments"></i>
+</button>
+
+<!-- Chat Sidebar -->
+<div class="chat-sidebar" id="chatSidebar">
+
+    <div class="chat-container">
+
+        <!-- Header -->
+        <div class="chat-header">
+            <img src="https://i.pravatar.cc/100?img=12">
+            <div>
+                <h6 class="mb-0">Luna AI</h6>
+                <small>Your helpful assistant</small>
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="chat-body">
+            <div class="message bot">
+                Hello! I'm Luna, your AI assistant.<br>
+                How can I help you today?
+            </div>
+
+            <div class="message user">
+                Hi Luna! Can you help me understand how this platform works?
+            </div>
+
+            <div class="message bot">
+                Absolutely! I'd be happy to guide you through the platform.
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="chat-footer">
+            <div class="input-area">
+                <input type="text" class="form-control" placeholder="Type your message...">
+                <button class="send-btn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+
+            <div class="bottom-icons mt-2">
+                <span><i class="fa-solid fa-circle-question"></i>Help</span>
+                <span><i class="fa-solid fa-lightbulb"></i>Tips</span>
+                <span><i class="fa-solid fa-book"></i>Docs</span>
+            </div>
+        </div>
+          <div>
+  <i id="chatClose"
+     class="fa-solid fa-x"
+     style="background-color:red;
+            border:solid transparent;
+            border-radius:40%;
+            position:absolute;
+            top:0;
+            right:15px;
+            padding:10px;
+            cursor:pointer;">
+  </i>
+</div>
+
+
+    </div>
+</div>
+
+
+    <script>
+  AOS.init();
+</script>
+
 <script src="js/main.js"></script>
 </body>
 </html>
