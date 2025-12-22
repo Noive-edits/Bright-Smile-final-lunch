@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+footer{
+        background-color:#1e293b;
+        padding: 80px 80px 0px 80px;
+        
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    color: #fff;
+}
+.footer-section p{
+    color: #8795a2;
+}
+.footer-section a{
+    color: #8795a2;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+.footer-section a:hover{
+    color: #3b82f6;
+}
+.footer-section div h4{
+    margin-bottom: 15px;
+}
+.footer-section div h5{
+    margin-bottom: 15px;
+    color: #fff;
+}
+.footer-section .dentalcare p{
+    margin-bottom: 0;
+}
+.footer-section .dentalcare h4{
+    margin-bottom: 0;
+}
+footer hr{
+    border: none;
+    border-top: 2px solid #55637a;
+    margin: 0 50px;
+}

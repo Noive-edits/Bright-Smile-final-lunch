@@ -77,8 +77,9 @@ form.addEventListener("submit", function (e) {
     h3.innerText = "Phone number must be at least 10 digits";
     return;
   }
+let appo = document.getElementById("appo")
 
-  //  Add to table
+  
   const tableBody = document.querySelector("#table tbody");
 
   tableBody.innerHTML += `
@@ -93,6 +94,7 @@ form.addEventListener("submit", function (e) {
 
   counter++;
   form.reset();
+  appo.style.display="block"
 });
 
 
@@ -118,3 +120,4 @@ window.addEventListener("scroll", () => {
         toggleBtn.classList.remove("show");
     }
 });
+

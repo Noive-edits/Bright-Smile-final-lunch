@@ -8,6 +8,7 @@
          <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
       <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/footer-style.css">
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -548,7 +549,7 @@ possible treatment.</p>
             border-radius: 8px;
         }
     </style>
-</head>
+
 
 <body>
 
@@ -619,7 +620,7 @@ possible treatment.</p>
 
                                 <div class="col-12">
                                     <label class="form-label">Phone</label>
-                                    <input id="phone" type="text" class="form-control" >
+                                    <input id="phone" type="number" class="form-control" >
                                 </div>
 
                                 <div class="col-12">
@@ -646,25 +647,29 @@ possible treatment.</p>
         </div>
     </section>
 
-<section style="padding: 100px;margin-top: 100px; background-color: #6b728013" class="appointments">
-    <div class="text-capitalize text-center"> <h2>Your Appointments</h2> </div>
+<section id="appo" style="display: none; padding: 100px; margin-top: 100px; background-color: #6b728013" class="appointments">
+    <div class="text-capitalize text-center">
+        <h2>Your Appointments</h2>
+    </div>
     
-<section class="mt-5 container">
-  <div>
-    <table id="table" class="table table-striped table-primary">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Full Name</th>
-          <th>Email</th>
-          <th>Phone Number</th>
-          <th>Date</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
+    <section class="mt-5 container">
+        <div>
+            <table id="table" class="table table-striped table-primary">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </section>
 </section>
+
 
 <!-- Floating Button -->
 <button id="chatToggle" class="chat-toggle">
@@ -733,7 +738,63 @@ possible treatment.</p>
 
     </div>
 </div>
+ 
+<footer>
+        <div class="footer-section">
+            <div class="dentalcare">
+                <div style="display: flex;">
+                    <i class="fa-solid fa-tooth" style="background-color: blue;padding: 8px;border-radius: 5px;margin-right: 15px;"></i>
+                    <h4>Dental Care</h4>  
+                </div>
+                <br>
+                <p>Providing exceptional dental care <br>
+                with gentle touch for over 15 years.</p><br>
+                <div>
+                    <i class="fa-brands fa-facebook-f" style="background-color: #384152;padding: 5px;border-radius: 5px;"></i>
+                <i class="fa-brands fa-twitter" style="background-color: #384152;padding: 5px;border-radius: 5px;"></i>
+                <i class="fa-brands fa-instagram" style="background-color: #384152;padding: 5px;border-radius: 5px;"></i>
+                <i class="fa-brands fa-linkedin-in" style="background-color: #384152;padding: 5px;border-radius: 5px;"></i>
+                </div>
+                
+            </div>
+            <div class="QuickLinks">
+                <h5>QuickLinks</h5>
+                <a href="#">Home</a><br>
+                <a href="#">Services</a><br>
+                <a href="#">About Us</a><br>
+                <a href="#">Our Team</a><br>
+                <a href="#">Contact</a><br>
+            </div>
+            <div class="Servises">
+                <h5>Servises</h5>
+                <a href="#">Teeth Whitening</a><br>
+                <a href="#">Dental Implants</a><br>
+                <a href="#">Orthodontics</a><br>
+                <a href="#">Root Canal Therapy</a><br>
+                <a href="#">Cosmetic Dentistry</a><br>
+            </div>
+            <div class="ContactUs">
+                <h5>Contact Us</h5>
+                <div style="display: flex;"><i class="fa-solid fa-location-dot" style="padding: 7px 8px 0 0;color: #8795a2;"></i><p>123 dental street <br> health city, country, HC12345</p><br></div>
+                <div style="display: flex;"><i class="fa-solid fa-phone" style="padding: 7px 8px 0 0;color: #8795a2;"></i><p>(555) 123-4567</p><br></div>
+                <div style="display: flex;"><i class="fa-solid fa-envelope" style="padding: 7px 8px 0 0;color: #8795a2;"></i><p>info@dentalcare.com</p></div>
+        </div>    
+        </div>
+        <hr>
+        <div class="copyright" style="display: flex;justify-content: center;">
+            <p style="color: #8795a2;margin: 40px;">© 2025 dentalCare. All rights reserved. | Privacy Policy | Termes of Service</p>
+            
+        </div>
+    </footer>
 
+    
+    
+    <!-- bootstrap js link -->
+    <script src="assests/bootstrap/js/bootstrap.js"></script>
+    <!-- main js link -->
+    <script src="js/main.js"></script>
+    <!-- font awesome js link -->
+   
 
     <script>
   AOS.init();
