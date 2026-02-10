@@ -121,3 +121,56 @@ window.addEventListener("scroll", () => {
     }
 });
 
+/* Navbar toggle for small screens */
+const navToggleBtn = document.getElementById('navToggle');
+const navLinksEl = document.querySelector('.nav-links');
+if (navToggleBtn && navLinksEl) {
+  navToggleBtn.addEventListener('click', () => {
+    navLinksEl.classList.toggle('active');
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1068) navLinksEl.classList.remove('active');
+  });
+}
+
+
+/* Move .care into .logo at <=1068px and hide original container */
+(() => {
+  const careEl = document.querySelector('.care');
+  const logoEl = document.querySelector('.logo');
+  if (!careEl || !logoEl) return;
+
+  const originalContainer = careEl.parentNode; // container that held .care
+  const originalDisplay = originalContainer && window.getComputedStyle(originalContainer).display;
+
+  function handleCareMove() {
+    const w = window.innerWidth;
+    // priority: <=590 => move into nav-links (burger); <=1068 => move into logo; >1068 restore
+    const navLinks = document.querySelector('.nav-links');
+
+    if (w <= 590) {
+      if (navLinks && !navLinks.contains(careEl)) {
+        navLinks.appendChild(careEl);
+      }
+      if (originalContainer) originalContainer.style.display = 'none';
+    } else if (w <= 1068) {
+      if (!logoEl.contains(careEl)) {
+        logoEl.appendChild(careEl);
+      }
+      if (originalContainer) originalContainer.style.display = 'none';
+    } else {
+      // restore to original
+      if (originalContainer && !originalContainer.contains(careEl)) {
+        originalContainer.appendChild(careEl);
+      }
+      if (originalContainer) originalContainer.style.display = originalDisplay || '';
+    }
+  }
+
+  // run on load and resize
+  window.addEventListener('resize', handleCareMove);
+  // call immediately
+  handleCareMove();
+})();
+
