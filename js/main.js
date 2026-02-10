@@ -32,8 +32,29 @@ prevBtn.addEventListener("click", () => {
     updateSlider();
 });
 
-window.addEventListener("resize", updateSlider);
+// Corrected function
+function handleViewChange(e) {
+  // e.matches is true if width is 800px or less
+  if (e.matches) {
+    prevBtn.style.display = "none";
+    nextBtn.style.display = "none";
+    
 
+  } else {
+    // Show them again when screen is bigger
+    prevBtn.style.display = "block"; 
+    nextBtn.style.display = "block";
+  }
+}
+
+// 1. Define the query
+const mql = window.matchMedia("(max-width: 800px)");
+
+// 2. Listen for changes
+mql.addEventListener("change", handleViewChange);
+
+// 3. Run immediately on page load to check initial size
+handleViewChange(mql);
 
 const t =true
 const f =false

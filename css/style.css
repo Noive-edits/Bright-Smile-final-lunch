@@ -443,6 +443,10 @@ body {
     display: flex;
     gap: 20px;
     transition: transform 0.5s ease;
+    overflow-x: auto;
+}
+.slider-track::-webkit-scrollbar{
+    width: 0;
 }
 
 .card {
